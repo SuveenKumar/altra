@@ -43,7 +43,7 @@ btnCancelAllOrders.addEventListener('click', () => {
 
 async function CancelOrders() {
     try {
-         const response = await fetch('https://localhost:5001/api/Altra/CancelOrder', {
+         const response = await fetch('https://altra-bc21.onrender.com/api/Altra/CancelOrder', {
             method: 'GET'
         });
         if (!response.ok) {
@@ -79,7 +79,7 @@ btnEnterToken.addEventListener('click', () => {
 
 async function GetLoginURL() {
     try {
-        const response = await fetch('https://localhost:5001/api/Altra/GetLoginURL', {
+        const response = await fetch('https://altra-bc21.onrender.com/api/Altra/GetLoginURL', {
             method: 'GET'
         });
         if (!response.ok) {
@@ -108,7 +108,7 @@ async function refreshStatus() {
             btnLogin.textContent = '🔑 Login ▼';
             return;
         }
-        const response = await fetch(`https://localhost:5001/api/Altra/Refresh?accessToken=${accessToken}`, {
+        const response = await fetch(`https://altra-bc21.onrender.com/api/Altra/Refresh?accessToken=${accessToken}`, {
             method: 'GET'
         });
 
@@ -141,7 +141,7 @@ async function Login() {
         const requestToken = txtRequestToken.value;
         loginDropdown.parentElement.classList.remove('show');
 
-        const response = await fetch(`https://localhost:5001/api/Altra/Login?requestToken=${requestToken}`, {
+        const response = await fetch(`https://altra-bc21.onrender.com/api/Altra/Login?requestToken=${requestToken}`, {
             method: 'GET'
         });
 
@@ -244,7 +244,7 @@ async function placeBulkOrder() {
 async function placeOrder(symbol, quantity, buy, sell, cell) {
     try {
         // Build the URL with query parameters
-        const url = `https://localhost:5001/api/Altra/PlaceOrder?symbol=${encodeURIComponent(symbol)}&quantity=${quantity}&buy=${buy}&sell=${sell}`;
+        const url = `https://altra-bc21.onrender.com/api/Altra/PlaceOrder?symbol=${encodeURIComponent(symbol)}&quantity=${quantity}&buy=${buy}&sell=${sell}`;
 
         // Fetch GET request asynchronously
         const response = await fetch(url);
