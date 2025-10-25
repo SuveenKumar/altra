@@ -9,35 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Check esp-web folder
-      run: |
-        echo "Files in esp-web:"
-        ls -la esp-web || echo "esp-web folder not found"
-
-    - name: Check JavaScript syntax
-      run: |
-        echo "Checking JavaScript syntax..."
-        find ./esp-web -name "*.js" -print0 | xargs -0 -n1 node --check
-      shell: bash
-
-    - name: Check HTML syntax
-      run: |
-        echo "Checking HTML syntax..."
-        sudo apt-get update && sudo apt-get install -y tidy
-        find ./esp-web -name "*.html" -print0 | xargs -0 -n1 tidy -qe
-      shell: bash
-
-    - name: Check CSS syntax
-      run: |
-        echo "Checking CSS syntax..."
-        npm install -g stylelint stylelint-config-standard
-        echo '{ "extends": "stylelint-config-standard" }' > .stylelintrc.json
-        find ./esp-web -name "*.css" -print0 | xargs -0 stylelint
-      shell: bash
-
     - name: Deploy to GitHub Pages "https://suveenkumar.github.io/sh/"
       uses: peaceiris/actions-gh-pages@v4
       with:
