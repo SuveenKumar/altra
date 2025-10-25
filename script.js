@@ -38,12 +38,12 @@ window.addEventListener('DOMContentLoaded', () => {
 btnImportExcel.addEventListener('click', () => fileInput.click());
 
 btnCancelAllOrders.addEventListener('click', () => {
-     CancelOrders();
+    CancelOrders();
 });
 
 async function CancelOrders() {
     try {
-         const response = await fetch('https://altra-bc21.onrender.com/api/Altra/CancelOrder', {
+        const response = await fetch('https://altra-bc21.onrender.com/api/Altra/CancelOrder', {
             method: 'GET'
         });
         if (!response.ok) {
@@ -55,7 +55,7 @@ async function CancelOrders() {
         const data = await response.json();
         alert(data.message);
     }
-    catch{
+    catch {
         alert("Server is down");
     }
 }
@@ -67,6 +67,13 @@ btnLogin.addEventListener('click', () => {
     else {
         isLoggedIn = false;
         localStorage.clear();
+        excelDataDiv.innerHTML = null;
+        isFileLoaded = false;
+        txtExcelFileName.textContent = null;
+        btnLogin.textContent = '🔑 Login ▼';
+        btnEnterToken.disabled = true;
+        btnCancelAllOrders.disabled = true;
+        btnPlaceOrder.disabled = true;
     }
 });
 
@@ -159,7 +166,7 @@ async function Login() {
             localStorage.setItem('accessToken', accessToken);
             btnLogin.textContent = '🚪Logout';
             btnCancelAllOrders.disabled = false;
-              if (isFileLoaded) {
+            if (isFileLoaded) {
                 btnPlaceOrder.disabled = false;
             }
         }
