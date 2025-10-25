@@ -17,4 +17,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./altra.FE  # <-- ensure index.html is inside this folder
+          publish_dir: ./altra.FE  # <-- ensure index.html is inside this folder.
