@@ -1,0 +1,96 @@
+2025-10-25 12:59:34 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 131.7 got success
+2025-10-25 12:59:34 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 134.9 got success
+2025-10-25 12:59:35 - Placing reverse GTT BUY order for BHARTIARTL with ltp: 2029.3 at price 1786.4 got success
+2025-10-25 12:59:35 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 200.5 got success
+2025-10-25 12:59:35 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 205.7 got success
+2025-10-25 12:59:36 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 469.3 got success
+2025-10-25 12:59:36 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 459.9 got success
+2025-10-25 12:59:36 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 429.5 got success
+2025-10-25 12:59:37 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2158.2 got success
+2025-10-25 12:59:37 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2099.3 got success
+2025-10-25 12:59:37 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2048.8 got success
+2025-10-25 13:46:47 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 131.7 got success
+2025-10-25 13:47:08 - FAILED Placing reverse GTT BUY order for ADANIPOWER because Trigger already met.
+2025-10-25 13:47:08 - Placing reverse GTT BUY order for BHARTIARTL with ltp: 2029.3 at price 1786.4 got success
+2025-10-25 13:47:09 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 200.5 got success
+2025-10-25 13:47:09 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 205.7 got success
+2025-10-25 13:47:09 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 469.3 got success
+2025-10-25 13:47:09 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 459.9 got success
+2025-10-25 13:47:10 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 429.5 got success
+2025-10-25 13:47:10 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2158.2 got success
+2025-10-25 13:47:10 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2099.3 got success
+2025-10-25 13:47:11 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2048.8 got success
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150298}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150297}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150296}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150295}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150294}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150293}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150292}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150290}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150289}}
+2025-10-25 13:48:03 - {"status":"success","data":{"trigger_id":292150280}}
+2025-10-25 13:49:09 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 131.7 got success
+2025-10-25 13:49:10 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 134.9 got success
+2025-10-25 13:49:10 - Placing reverse GTT BUY order for BHARTIARTL with ltp: 2029.3 at price 1786.4 got success
+2025-10-25 13:49:10 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 200.5 got success
+2025-10-25 13:49:11 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 205.7 got success
+2025-10-25 13:49:11 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 469.3 got success
+2025-10-25 13:49:12 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 459.9 got success
+2025-10-25 13:49:12 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 429.5 got success
+2025-10-25 13:49:12 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2158.2 got success
+2025-10-25 13:49:13 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2099.3 got success
+2025-10-25 13:49:13 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2048.8 got success
+2025-10-25 13:49:20 - {"status":"success","data":{"trigger_id":292150350}}
+2025-10-25 13:49:21 - {"status":"success","data":{"trigger_id":292150349}}
+2025-10-25 13:49:22 - {"status":"success","data":{"trigger_id":292150348}}
+2025-10-25 13:49:22 - {"status":"success","data":{"trigger_id":292150346}}
+2025-10-25 13:49:22 - {"status":"success","data":{"trigger_id":292150345}}
+2025-10-25 13:49:22 - {"status":"success","data":{"trigger_id":292150344}}
+2025-10-25 13:49:22 - {"status":"success","data":{"trigger_id":292150342}}
+2025-10-25 13:49:23 - {"status":"success","data":{"trigger_id":292150341}}
+2025-10-25 13:49:23 - {"status":"success","data":{"trigger_id":292150339}}
+2025-10-25 13:49:23 - {"status":"success","data":{"trigger_id":292150338}}
+2025-10-25 13:49:23 - {"status":"success","data":{"trigger_id":292150337}}
+2025-10-25 13:49:35 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 131.7 got success
+2025-10-25 13:49:35 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 134.9 got success
+2025-10-25 13:49:35 - Placing reverse GTT BUY order for BHARTIARTL with ltp: 2029.3 at price 1786.4 got success
+2025-10-25 13:49:36 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 200.5 got success
+2025-10-25 13:49:36 - FAILED Placing reverse GTT BUY order for BHEL1 because Invalid instrument
+2025-10-25 13:49:37 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 469.3 got success
+2025-10-25 13:49:37 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 459.9 got success
+2025-10-25 13:49:37 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 429.5 got success
+2025-10-25 13:49:39 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2158.2 got success
+2025-10-25 13:49:39 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2099.3 got success
+2025-10-25 13:49:39 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2048.8 got success
+2025-10-25 13:49:47 - {"status":"success","data":{"trigger_id":292150369}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150368}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150367}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150365}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150364}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150362}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150360}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150358}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150357}}
+2025-10-25 13:49:48 - {"status":"success","data":{"trigger_id":292150356}}
+2025-10-25 13:50:20 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 131.7 got success
+2025-10-25 13:50:21 - Placing reverse GTT BUY order for ADANIPOWER with ltp: 167.72 at price 134.9 got success
+2025-10-25 13:50:22 - Placing reverse GTT BUY order for BHARTIARTL with ltp: 2029.3 at price 1786.4 got success
+2025-10-25 13:50:22 - Placing reverse GTT BUY order for BHEL with ltp: 230.94 at price 200.5 got success
+2025-10-25 13:50:23 - FAILED Placing reverse GTT BUY order for BHEL1 because Invalid instrument
+2025-10-25 13:50:23 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 469.3 got success
+2025-10-25 13:50:23 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 459.9 got success
+2025-10-25 13:50:24 - Placing reverse GTT SELL order for BEL with ltp: 422.05 at price 429.5 got success
+2025-10-25 13:50:24 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2158.2 got success
+2025-10-25 13:50:25 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2099.3 got success
+2025-10-25 13:50:25 - Placing reverse GTT SELL order for BHARTIARTL with ltp: 2029.3 at price 2048.8 got success
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150390}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150389}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150388}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150387}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150386}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150385}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150384}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150382}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150381}}
+2025-10-25 13:51:26 - {"status":"success","data":{"trigger_id":292150379}}
