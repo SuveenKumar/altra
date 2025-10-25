@@ -9,8 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services
 builder.Services.AddControllers();
 builder.Services.AddSingleton(sp => new Kite(TradingConstants.APIKEY));
-builder.Services.AddSingleton<OrderManager>(); // <-- Singleton registration
-builder.Services.AddSingleton<LoginManager>(); // <-- Singleton registration
+builder.Services.AddSingleton<OrderManager>();
+builder.Services.AddSingleton<LoginManager>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,22 +24,28 @@ builder.Services.AddCors(options =>
                         .AllowAnyMethod());
 });
 
-// ✅ Force specific ports
-builder.WebHost.UseUrls("http://localhost:5000", "https://localhost:5001");
+// ❌ Do NOT force localhost URLs in cloud
+// builder.WebHost.UseUrls("http://localhost:5000", "https://localhost:5001");
 
 var app = builder.Build();
 
-// Configure HTTP pipeline
+// ✅ Enable Swagger only in development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// ❌ Remove HTTPS redirection in container
+// app.UseHttpsRedirection();
+
 app.UseCors("AllowAll");   // must be before MapControllers
 app.UseAuthorization();
 
 app.MapControllers();
+
+// ✅ Use PORT environment variable for Render
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+app.Urls.Add($"http://*:{port}");
 
 app.Run();
