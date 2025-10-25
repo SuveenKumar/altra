@@ -4,7 +4,7 @@ namespace altra.BE
 {
     public static class Logger
     {
-        private static string logFilePath = "intraday_log.txt"; // Change the file path as needed
+        private static string logFilePath = "log/intraday_log.txt"; // Change the file path as needed
 
         public static void Log(string message)
         {
