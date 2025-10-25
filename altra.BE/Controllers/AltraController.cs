@@ -30,7 +30,7 @@ namespace altra.BE.Controllers
         [HttpGet("Login")]
         public IActionResult Login([FromQuery] string requestToken)
         {
-            _logger.LogInformation($"Refresh");
+            _logger.LogInformation($"Login");
             return Ok(new { message = _loginManager.ProcessLoginWithRequestToken(requestToken).Result });
         }
 
