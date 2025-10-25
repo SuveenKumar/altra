@@ -3,17 +3,19 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # runs whenever you push to main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout source code
         uses: actions/checkout@v3
 
-      - name: Deploy static files to gh-pages
+      - name: Deploy static files to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./altra.FE
+          publish_dir: ./altra.FE   # your folder containing index.html
+          publish_branch: gh-pages  # auto creates gh-pages branch if not exists
