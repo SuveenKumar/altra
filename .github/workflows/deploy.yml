@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy to GitHub Pages "https://suveenkumar.github.io/sh/"
+    - name: Deploy to GitHub Pages "https://suveenkumar.github.io/altra/"
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
