@@ -1,6 +1,0 @@
-   @altra.BE_HostAddress = http://localhost:5062
-
-GET {{altra.BE_HostAddress}}/altra/
-Accept: application/json
-
-###
