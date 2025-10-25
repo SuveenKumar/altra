@@ -65,7 +65,8 @@ btnLogin.addEventListener('click', () => {
         loginDropdown.parentElement.classList.toggle('show');
     }
     else {
-
+        isLoggedIn = false;
+        localStorage.clear();
     }
 });
 
