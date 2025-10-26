@@ -242,8 +242,8 @@ async function placeBulkOrder() {
         const qty = cells[2]?.textContent.trim() || '';
         const buy = cells[3]?.textContent.trim() || '';
         const sell = cells[4]?.textContent.trim() || '';
-
-        if (symbol != "") {
+        const status = cells[5]?.textContent.trim() || '';
+        if (symbol != "" && status !="success") {
             await placeOrder(symbol, qty, buy, sell, cells[5]);
         }
     }
