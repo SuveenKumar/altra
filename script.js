@@ -240,8 +240,8 @@ async function placeBulkOrder() {
         const cells = row.querySelectorAll('td');
         const symbol = cells[1]?.textContent.trim() || '';
         const qty = cells[2]?.textContent.trim() || '';
-        const buy = cells[3]?.textContent.trim() || '';
-        const sell = cells[4]?.textContent.trim() || '';
+        const buy = cells[3]?.textContent.trim() || 0;
+        const sell = cells[4]?.textContent.trim() || 0;
         const status = cells[5]?.textContent.trim() || '';
         if (symbol != "" && status !="success") {
             await placeOrder(symbol, qty, buy, sell, cells[5]);
