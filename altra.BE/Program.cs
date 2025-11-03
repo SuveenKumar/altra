@@ -8,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllers();
-builder.Services.AddHttpClient<Groww>();
 builder.Services.AddSingleton(sp => new Kite(TradingConstants.APIKEY));
 builder.Services.AddSingleton<OrderManager>();
 builder.Services.AddSingleton<LoginManager>();
@@ -26,7 +25,7 @@ builder.Services.AddCors(options =>
 });
 
 // ❌ Do NOT force localhost URLs in cloud
- // builder.WebHost.UseUrls("http://localhost:5000", "https://localhost:5001");
+// builder.WebHost.UseUrls("http://localhost:5000", "https://localhost:5001");
 
 var app = builder.Build();
 
@@ -38,7 +37,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // ❌ Remove HTTPS redirection in container
- // app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");   // must be before MapControllers
 app.UseAuthorization();
