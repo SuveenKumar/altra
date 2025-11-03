@@ -20,6 +20,7 @@ namespace altra.BE
         public List<KiteConnect.Instrument> AvailableScrips = new List<KiteConnect.Instrument>();
         public Kite _kite;
         private ILogger<OrderManager> _logger;
+        private Groww _groww;
         private Ticker ticker;
         public EventHandler ServerConnected;
         public EventHandler ServerDisconnected;
@@ -27,10 +28,11 @@ namespace altra.BE
 
         //private ObservableCollection<StockItem> _selectedStocks;
 
-        public OrderManager(Kite kite, ILogger<OrderManager> logger)
+        public OrderManager(Kite kite, ILogger<OrderManager> logger, Groww groww)
         {
             _kite = kite;
             _logger= logger;
+            _groww = groww;
         }
 
         public string PlaceOpenOrder(string symbol, int quantity, decimal buy, decimal sell)
@@ -51,7 +53,7 @@ namespace altra.BE
         {
             try
             {
-                var ltp = GrowwApi.GetLTP(symbol);
+                var ltp = _groww.GetLatestPricesAsync(symbol).Result;
 
                 GTTParams gttParams = new GTTParams
                 {
