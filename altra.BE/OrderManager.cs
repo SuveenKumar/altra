@@ -1,5 +1,6 @@
 ﻿using KiteConnect;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net;
@@ -18,6 +19,7 @@ namespace altra.BE
     {
         public List<KiteConnect.Instrument> AvailableScrips = new List<KiteConnect.Instrument>();
         public Kite _kite;
+        private ILogger<OrderManager> _logger;
         private Ticker ticker;
         public EventHandler ServerConnected;
         public EventHandler ServerDisconnected;
@@ -25,9 +27,10 @@ namespace altra.BE
 
         //private ObservableCollection<StockItem> _selectedStocks;
 
-        public OrderManager(Kite kite)
+        public OrderManager(Kite kite, ILogger<OrderManager> logger)
         {
             _kite = kite;
+            _logger= logger;
         }
 
         public string PlaceOpenOrder(string symbol, int quantity, decimal buy, decimal sell)
@@ -40,7 +43,7 @@ namespace altra.BE
             foreach (var gtt in _kite.GetGTTs())
             {
                 var gttCancelResponse = _kite.CancelGTT(gtt.Id);
-                Logger.Log(Utils.JsonSerialize(gttCancelResponse));
+                _logger.LogInformation(Utils.JsonSerialize(gttCancelResponse));
             }
         }
 
@@ -73,12 +76,12 @@ namespace altra.BE
                 var placeGTTResponse = _kite.PlaceGTT(gttParams);
                 var status = placeGTTResponse["status"];
 
-                Logger.Log($"Placing reverse GTT {type} order for {symbol} with ltp: {ltp} at price {price} got {status}");
+                _logger.LogInformation($"Placing reverse GTT {type} order for {symbol} with ltp: {ltp} at price {price} got {status}");
                 return status;
             }
             catch (Exception e)
             {
-                Logger.Log($"FAILED Placing reverse GTT {type} order for {symbol} because {e.Message}");
+                //Logger.Log($"FAILED Placing reverse GTT {type} order for {symbol} because {e.Message}");
                 return e.Message;
             }
         }
