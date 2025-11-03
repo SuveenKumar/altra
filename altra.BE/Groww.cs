@@ -3,9 +3,14 @@ using System.Text.Json;
 
 namespace altra.BE
 {
-    public class StockData
+    public class GrowwPriceInfo
     {
-        public decimal ltp { get; set; }
+        public decimal lastPrice { get; set; }
+    }
+
+    public class GrowwResponse
+    {
+        public GrowwPriceInfo priceInfo { get; set; }
     }
     public class Groww
     {
@@ -20,7 +25,7 @@ namespace altra.BE
         {
             try
             {
-                var url = $"https://groww.in/v1/api/stocks_data/v1/accord_points/exchange/NSE/segment/CASH/latest_prices_ohlc/{symbol}";
+                var url = $"https://www.nseindia.com/api/quote-equity?symbol={symbol}";
 
                 var request = new HttpRequestMessage(HttpMethod.Get, url);
                 request.Headers.Add("User-Agent",
@@ -32,9 +37,9 @@ namespace altra.BE
                 var response = await _httpClient.SendAsync(request);
                 response.EnsureSuccessStatusCode();
                 var jsonString = await response.Content.ReadAsStringAsync();
-                var stockData = JsonSerializer.Deserialize<StockData>(jsonString);
+                var stockData = JsonSerializer.Deserialize<GrowwResponse>(jsonString);
 
-                return stockData.ltp;
+                return stockData.priceInfo.lastPrice;
             }
             catch (Exception ex)
             {
